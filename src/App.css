@@ -4,3 +4,25 @@
   padding: 2rem;
   text-align: center;
 }
+
+h1, h2, h3, h4, h5 {
+  text-decoration: underline;
+}
+
+.product-card {
+  background-color: lightsalmon;
+  padding: 10px;
+  margin: 5px;
+}
+
+.add-form {
+  background-color: lightgreen;
+  padding: 10px 20px 20px 20px;
+  margin: 5px;
+}
+
+.search-bar {
+  background-color: lightskyblue;
+  padding: 10px 20px 20px 20px;
+  margin: 5px;
+}

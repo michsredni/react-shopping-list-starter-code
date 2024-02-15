@@ -1,11 +1,11 @@
 
 function SearchBar() {
   return (
-    <div>
+    <div className="search-bar">
       
       <h2>Search Bar</h2>
-
-      {/* a search bar form will be rendered here */}
+        
+      <input type="text" />
 
     </div>
   )

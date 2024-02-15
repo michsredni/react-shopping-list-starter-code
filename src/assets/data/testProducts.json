@@ -1,0 +1,17 @@
+[
+  {
+    "name": "water",
+    "price": 2,
+    "isPurchased": false
+  },
+  {
+    "name": "potatoes",
+    "price": 1,
+    "isPurchased": false
+  },
+  {
+    "name": "salt",
+    "price": 0.4,
+    "isPurchased": false
+  }
+]
