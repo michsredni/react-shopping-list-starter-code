@@ -1,7 +1,7 @@
 
 function SearchBar() {
   return (
-    <div className="search-bar">
+    <div className="search-bar container">
       
       <h2>Search Bar</h2>
         

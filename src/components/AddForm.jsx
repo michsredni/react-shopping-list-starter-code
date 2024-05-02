@@ -1,7 +1,7 @@
 
 function AddForm() {
   return (
-    <div className="add-form">
+    <div className="add-form container">
       
       <h2>Add Form</h2>
 

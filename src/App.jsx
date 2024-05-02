@@ -5,9 +5,12 @@ import ShoppingList from "./pages/ShoppingList"
 function App() {
 
   return (
-    <div>
+    <>
+
+      {/* If using react routing, the route structure and pages should be here along with ShoppingList */}
       <ShoppingList />
-    </div>
+
+    </>
   )
 }
 

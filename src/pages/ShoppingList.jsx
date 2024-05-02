@@ -1,11 +1,11 @@
+import { useState } from "react";
+
 import AddForm from "../components/AddForm";
 import ProductList from "../components/ProductList";
 import SearchBar from "../components/SearchBar";
 
 // this data is just for testing the initial rendering of data
-import testProducts from "../assets/data/testProducts.json";
-
-import { useState } from "react";
+import testProducts from "../data/testProducts.json";
 
 function ShoppingList() {
 
@@ -13,23 +13,23 @@ function ShoppingList() {
   // initial state. change to empty array when done with add functionality
 
   return (
-    <div>
+    <>
 
       <h1>Shopping List</h1>
 
       {/* all elements of the shopping list will be here */}
-      
-      {allProducts.map((eachProduct) => {
+      {allProducts.map((eachProduct, index) => {
         return (
-          <div className="product-card">
+          <div className="product-card" key={index}>
             <h3>{eachProduct.name}</h3>
-            <p><b>Price:</b> {eachProduct.price}€</p>
-            <p>{eachProduct.isPurchased === true ? "✅ Purchased" : "🟡 Pending"}</p>
+            <p>{eachProduct.price}€</p>
+            <p>{eachProduct.isPurchased === true ? "✅" : "🟡"}</p>
+            <button>Buy</button>
           </div>
         )
       })}
 
-    </div>
+    </>
   )
 }
 

@@ -2,7 +2,7 @@ import ProductCard from "./ProductCard";
 
 function ProductList() {
   return (
-    <div>
+    <div className="product-list container">
       
       <h2>Product List</h2>
 

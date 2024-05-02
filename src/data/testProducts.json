@@ -7,7 +7,7 @@
   {
     "name": "potatoes",
     "price": 1,
-    "isPurchased": false
+    "isPurchased": true
   },
   {
     "name": "salt",
