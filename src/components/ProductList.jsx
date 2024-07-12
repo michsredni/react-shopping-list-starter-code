@@ -1,6 +1,6 @@
 import ProductCard from "./ProductCard";
 
-function ProductList() {
+function ProductList(props) {
   return (
     <div className="product-list container">
       
@@ -8,7 +8,15 @@ function ProductList() {
 
       {/* the list of the products will be here */}
       {/* it will render a ProductCard for each product in the list */}
-
+      {props.allProducts
+      .filter((eachProduct) => {
+        return eachProduct.name.toLowerCase().includes(props.searchValue.toLowerCase())
+      })
+      .map((eachProduct, index) => {
+        return (
+          <ProductCard key={index} eachProduct={eachProduct}/>
+        )
+      })}
     </div>
   )
 }
